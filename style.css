@@ -2534,3 +2534,266 @@ a,
         color .3s ease;
 
 }
+
+/* ==========================================================
+   PATCH v1.1
+   Mobile Menu
+   Progress Bar
+   Back To Top
+========================================================== */
+
+
+/* ==========================================================
+   PROGRESS BAR
+========================================================== */
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #3B82F6,
+        #60A5FA
+    );
+
+    z-index:9999;
+
+    transition:width .15s linear;
+
+}
+
+
+/* ==========================================================
+   MOBILE MENU BUTTON
+========================================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+
+.menu-toggle span{
+
+    width:26px;
+
+    height:3px;
+
+    border-radius:999px;
+
+    background:white;
+
+    transition:.35s;
+
+}
+
+
+/* ==========================================================
+   MENU OPEN
+========================================================== */
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:
+        translateY(9px)
+        rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:
+        translateY(-9px)
+        rotate(-45deg);
+
+}
+
+
+/* ==========================================================
+   MOBILE MENU
+========================================================== */
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:82px;
+
+    left:0;
+
+    width:100%;
+
+    background:#0B1120;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:20px;
+
+    transform:translateY(-120%);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:998;
+
+}
+
+
+.mobile-menu.active{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.mobile-menu a{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+
+.mobile-menu a:hover{
+
+    background:rgba(59,130,246,.12);
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================================
+   HEADER SCROLLED
+========================================================== */
+
+#header.scrolled{
+
+    background:rgba(5,8,22,.92);
+
+    backdrop-filter:blur(22px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+
+}
+
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+.back-to-top{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+}
+
+
+/* ==========================================================
+   ACTIVE NAVIGATION
+========================================================== */
+
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .navbar{
+
+        justify-content:space-between;
+
+    }
+
+}
+
