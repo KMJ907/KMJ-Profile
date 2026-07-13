@@ -46,40 +46,74 @@
 </head>
 
 <body>
+    <!-- ====================================================== 
+         Progress Bar 
+    ======================================================== -->
+
+        <div id="progress-bar"></div>
 
     <!-- =======================================================
          HEADER
     ======================================================== -->
+<header id="header">
 
-    <header id="header">
+    <div class="container navbar">
 
-        <div class="container navbar">
+        <a href="#hero" class="logo">
+            KMJ
+        </a>
 
-            <a href="#hero" class="logo">
-                KMJ
-            </a>
+        <!-- Mobile Button -->
 
-            <nav>
+        <button class="menu-toggle" aria-label="Menu">
 
-                <ul class="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
 
-                    <li><a href="#about">About</a></li>
+        </button>
 
-                    <li><a href="#stack">Tech Stack</a></li>
+        <nav>
 
-                    <li><a href="#projects">Projects</a></li>
+            <ul class="nav-links">
 
-                    <li><a href="#activity">Activity</a></li>
+                <li><a href="#about">About</a></li>
 
-                    <li><a href="#contact">Contact</a></li>
+                <li><a href="#stack">Tech Stack</a></li>
 
-                </ul>
+                <li><a href="#projects">Projects</a></li>
 
-            </nav>
+                <li><a href="#activity">Activity</a></li>
 
-        </div>
+                <li><a href="#contact">Contact</a></li>
 
-    </header>
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+    <!-- =======================================================
+         Mobile Navigation 
+    ======================================================== -->
+
+<div class="mobile-menu">
+
+    <a href="#hero">Home</a>
+
+    <a href="#about">About</a>
+
+    <a href="#stack">Tech Stack</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#activity">Activity</a>
+
+    <a href="#contact">Contact</a>
+
+</div>
 
     <!-- =======================================================
          HERO
@@ -183,7 +217,7 @@
          ABOUT
     ======================================================== -->
 
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
 
         <div class="container">
 
@@ -297,7 +331,7 @@
          TECH STACK
     ======================================================== -->
 
-    <section id="stack" class="section">
+    <section id="stack" class="section reveal">
 
         <div class="container">
 
@@ -474,7 +508,7 @@
          PROJECTS
     ======================================================== -->
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
 
         <div class="container">
 
@@ -644,7 +678,7 @@
          ACTIVITY
     ======================================================== -->
 
-    <section id="activity" class="section">
+    <section id="activity" class="section reveal">
 
         <div class="container">
 
@@ -771,7 +805,7 @@
          CONTACT
     ======================================================== -->
 
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
 
         <div class="container">
 
@@ -871,11 +905,23 @@
 
     </section>
 
+<!-- Back To Top -->
+
+<button
+    id="back-to-top"
+    class="back-to-top"
+    aria-label="Back To Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
     <!-- =======================================================
          FOOTER
     ======================================================== -->
 
-    <footer id="footer">
+    <footer id="footer" class="reveal">
 
         <div class="container">
 
