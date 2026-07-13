@@ -1,0 +1,353 @@
+/* ==========================================================
+   KMJ Portfolio
+   Responsive.css
+========================================================== */
+
+
+/* ==========================================================
+   Large Tablet
+========================================================== */
+
+@media (max-width:1200px){
+
+    .container{
+
+        width:min(94%,1000px);
+
+    }
+
+}
+
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width:992px){
+
+    /* ---------- Section ---------- */
+
+    .section{
+
+        padding:90px 0;
+
+    }
+
+    /* ---------- Navbar ---------- */
+
+    .navbar{
+
+        height:72px;
+
+    }
+
+    .nav-links{
+
+        gap:22px;
+
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding-top:130px;
+
+    }
+
+    .profile{
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+    .hero h1{
+
+        font-size:4rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.35rem;
+
+    }
+
+    .hero-description{
+
+        font-size:1rem;
+
+    }
+
+    /* ---------- About ---------- */
+
+    .about-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-info{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    /* ---------- Stack ---------- */
+
+    .stack-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+    /* ---------- Projects ---------- */
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* ---------- Activity ---------- */
+
+    .activity-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width:768px){
+
+    /* ---------- Section ---------- */
+
+    .section{
+
+        padding:80px 0;
+
+    }
+
+    .section-header{
+
+        margin-bottom:50px;
+
+    }
+
+    /* ---------- Navbar ---------- */
+
+    .navbar{
+
+        justify-content:center;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+
+        padding-top:120px;
+
+    }
+
+    .profile{
+
+        width:145px;
+
+        height:145px;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.15rem;
+
+    }
+
+    .hero-description{
+
+        font-size:.95rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .hero-tags{
+
+        gap:10px;
+
+    }
+
+    .hero-tags span{
+
+        font-size:.85rem;
+
+    }
+
+    /* ---------- About ---------- */
+
+    .about-card{
+
+        padding:30px;
+
+    }
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* ---------- Stack ---------- */
+
+    .stack-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .stack-card{
+
+        padding:28px 20px;
+
+    }
+
+    .stack-card i{
+
+        font-size:3rem;
+
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact-item{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .contact-link{
+
+        width:100%;
+
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer-links{
+
+        gap:18px;
+
+    }
+
+}
+
+/* ==========================================================
+   Small Mobile
+========================================================== */
+
+@media (max-width:480px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1rem;
+
+    }
+
+    .section-title{
+
+        font-size:2rem;
+
+    }
+
+    .profile{
+
+        width:120px;
+
+        height:120px;
+
+    }
+
+    .stack-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .activity-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-card{
+
+        padding:28px;
+
+    }
+
+    .activity-card{
+
+        padding:28px;
+
+    }
+
+    .contact-item{
+
+        padding:24px;
+
+    }
+
+    .footer-logo{
+
+        font-size:2rem;
+
+    }
+
+}
+
