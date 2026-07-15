@@ -1956,6 +1956,8 @@ img{
 
     height:360%;
 
+    pointer-events:none;
+
     background:
 
         linear-gradient(
@@ -2094,6 +2096,10 @@ img{
 
     transition:all .3s ease;
 
+    position:relative;
+
+    z-index:10;
+
 }
 
 .contact-link:hover{
@@ -2122,6 +2128,8 @@ img{
     border:1px solid transparent;
 
     transition:.35s;
+
+    pointer-events:none;
 
 }
 
